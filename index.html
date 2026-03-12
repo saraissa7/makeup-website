@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌸 Complete Makeup Guide by Sara 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌸 Complete Makeup Guide 🌸</h1>
+        <p>Learn how to use each makeup product correctly for a glowing, flawless look</p>
+    </header>
+
+    <!-- Search bar -->
+    <div style="text-align:center; margin: 1rem;">
+        <input type="text" id="searchInput" placeholder="Search product..." style="padding: 0.5rem; border-radius: 8px; border: 1px solid #ffb6c1;">
+        <button onclick="searchProduct()" style="padding:0.5rem 1rem; border:none; border-radius:8px; background-color:#ff69b4; color:white;">Search</button>
+    </div>
+
+    <!-- Navigation links -->
+    <nav style="text-align:center; margin-bottom:2rem;">
+        <button onclick="scrollToSection('primer')">Primer</button>
+        <button onclick="scrollToSection('foundation')">Foundation</button>
+        <button onclick="scrollToSection('concealer')">Concealer</button>
+        <button onclick="scrollToSection('powder')">Powder</button>
+        <button onclick="scrollToSection('blush')">Blush</button>
+        <button onclick="scrollToSection('eyeshadow')">Eyeshadow</button>
+        <button onclick="scrollToSection('eyeliner')">Eyeliner</button>
+        <button onclick="scrollToSection('mascara')">Mascara</button>
+        <button onclick="scrollToSection('lipstick')">Lipstick</button>
+        <button onclick="scrollToSection('bronzer')">Bronzer</button>
+        <button onclick="scrollToSection('setting-spray')">Setting Spray</button>
+    </nav>
+
+    <main>
+        <section id="primer">
+            <h2>Primer</h2>
+            <img src="images/primer.jpg" alt="Primer">
+            <p>Apply a thin layer before foundation to smooth skin and help makeup last longer.</p>
+        </section>
+
+        <section id="foundation">
+            <h2>Foundation</h2>
+            <img src="images/foundation.jpg" alt="Foundation">
+            <p>Even out your skin tone by choosing the right shade. Apply with brush, sponge, or fingers.</p>
+        </section>
+
+        <section id="concealer">
+            <h2>Concealer</h2>
+            <img src="images/concealer.jpg" alt="Concealer">
+            <p>Use to cover dark circles, blemishes, or imperfections. Blend gently into skin.</p>
+        </section>
+
+        <section id="powder">
+            <h2>Powder</h2>
+            <img src="images/powder.jpg" alt="Powder">
+            <p>Set your foundation with powder to reduce shine and extend makeup wear.</p>
+        </section>
+
+        <section id="blush">
+            <h2>Blush</h2>
+            <img src="images/blush.jpg" alt="Blush">
+            <p>Add color to your cheeks. Smile and lightly apply to the apples of your cheeks.</p>
+        </section>
+
+        <section id="eyeshadow">
+            <h2>Eyeshadow</h2>
+            <img src="images/eyeshadow.jpg" alt="Eyeshadow">
+            <p>Enhance your eyes with colors that complement your look. Blend well.</p>
+        </section>
+
+        <section id="eyeliner">
+            <h2>Eyeliner</h2>
+            <img src="images/eyeliner.jpg" alt="Eyeliner">
+            <p>Define your eyes. Apply close to the lash line for a natural or dramatic effect.</p>
+        </section>
+
+        <section id="mascara">
+            <h2>Mascara</h2>
+            <img src="images/mascara.jpg" alt="Mascara">
+            <p>Coat lashes from root to tip for volume and length. Apply one or two layers.</p>
+        </section>
+
+        <section id="lipstick">
+            <h2>Lipstick</h2>
+            <img src="images/lipstick.jpg" alt="Lipstick">
+            <p>Apply after lip balm. Use a lip liner for perfect shape and longer wear.</p>
+        </section>
+
+        <section id="bronzer">
+            <h2>Bronzer</h2>
+            <img src="images/bronzer.jpg" alt="Bronzer">
+            <p>Add warmth and dimension to your face. Apply to cheekbones, temples, and jawline.</p>
+        </section>
+
+        <section id="setting-spray">
+            <h2>Setting Spray</h2>
+            <img src="images/setting-spray.jpg" alt="Setting Spray">
+            <p>Hold the spray 20 cm/8 inches away and mist evenly over your face to set makeup.</p>
+        </section>
+    </main>
+
+    <!-- Lightbox overlay -->
+    <div id="lightboxOverlay">
+        <img id="lightboxImg" src="" alt="Enlarged Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
